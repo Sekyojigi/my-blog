@@ -1,0 +1,2 @@
+# Windows에서도 저장소에는 LF 줄바꿈으로 저장한다
+* text=auto eol=lf

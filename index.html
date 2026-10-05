@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>투자 동호회</title>
+  <meta name="description" content="새로운 사고를 갖고 투자 접근을 하여 우리 모두 부자됩시다. ㅎㅎㅎ">
+  <!-- CSS보다 먼저 실행해야 저장된 테마가 깜빡임 없이 적용된다 -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="site-title" href="#/">투자 동호회</a>
+      <button class="theme-toggle" type="button" aria-label="다크 모드" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1">
+    <p class="status">글을 불러오는 중…</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 투자 동호회</p>
+    </div>
+  </footer>
+</body>
+</html>
